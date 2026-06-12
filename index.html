@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Técnico de Agronomia e Engenharia de Biossistemas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/dist/skip-nav.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AgroForte: Engenharia de Biossistemas Avançada</h1>
+            <p>Guia Técnico de Nível Universitário e Profissional</p>
+        </div>
+    </header>
+
+    <div class="container dashboard">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#modulo1" class="nav-link active" data-target="modulo1">1. Ciência do Solo</a></li>
+                <li><a href="#modulo2" class="nav-link" data-target="modulo2">2. Fitotecnia e Fisiologia</a></li>
+                <li><a href="#modulo3" class="nav-link" data-target="modulo3">3. Fitossanidade e MIP</a></li>
+                <li><a href="#modulo4" class="nav-link" data-target="modulo4">4. AP & Engenharia</a></li>
+                <li><a href="#modulo5" class="nav-link" data-target="modulo5">5. Zootecnia Avançada</a></li>
+                <li><a href="#modulo6" class="nav-link" data-target="modulo6">6. Gestão e Commodities</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            <section id="modulo1" class="content-section active">
+                <h2>1. Ciência do Solo e Nutrição de Plantas</h2>
+                
+                <h3>Física do Solo</h3>
+                <p><strong>Textura e Estrutura:</strong> A textura é determinada pela proporção das frações minerais: areia (2,0 a 0,05 mm), silte (0,05 a 0,002 mm) e argila (&lt; 0,002 mm). A estrutura refere-se ao arranjo dessas partículas em agregados unidos por agentes cimentantes orgânicos (substâncias húmicas) e inorgânicos (óxidos de Fe e Al).</p>
+                <p><strong>Porosidade e Dinâmica de Água:</strong> A porosidade total é dividida em macroporos (&gt; 0,05 mm, aeração/drenagem) e microporos (&lt; 0,05 mm, retenção de água por capilaridade). O movimento da água responde ao gradiente de potencial hídrico total (\(\Psi_t\)):</p>
+                <div class="equation">\(\Psi_t = \Psi_m + \Psi_g + \Psi_o\)</div>
+                <p>Onde \(\Psi_m\) é o potencial matricial, \(\Psi_g\) o gravitacional e \(\Psi_o\) o osmótico. A água disponível situa-se entre a Capacidade de Campo (\(\approx -0,01\) a \(-0,03\text{ MPa}\)) e o Ponto de Murcha Permanente (\(\approx -1,5\text{ MPa}\)).</p>
+                <p><strong>Compactação do Solo:</strong> Redução da macroporosidade com aumento da densidade aparente (\(Ds\)). Causas: tráfego pesado acima do Limite de Plasticidade (LP) e pisoteio animal. Manejo: subsolagem mecânica na consistência friável ou descompactação biológica via plantas de cobertura com raiz pivotante agressiva (ex: nabo forrageiro).</p>
+
+                <h3>Química e Fertilidade</h3>
+                <p><strong>CTC e Saturação por Bases (V%):</strong> A Capacidade de Troca de Cátions mede as cargas negativas dos coloides. A saturação por bases expressa a porcentagem da CTC ocupada por cátions alcalinos (\(Ca^{2+}, Mg^{2+}, K^{+}, Na^{+}\)):</p>
+                <div class="equation">\(V\% = \frac{\sum \text{Bases (SB)}}{\text{CTC atual (T)}} \times 100\)</div>
+                <p><strong>Macronutrientes e Micronutrientes:</strong></p>
+                <ul>
+                    <li><strong>N:</strong> Constituinte de aminoácidos, proteínas e clorofila; essencial no metabolismo energético.</li>
+                    <li><strong>P:</strong> Estrutural (ATP, ácidos nucleicos, fosfolipídios); transferência de energia e expansão radicular.</li>
+                    <li><strong>K:</strong> Regulação osmótica, abertura/fechamento estomático e ativação de mais de 60 enzimas.</li>
+                    <li><strong>Ca:</strong> Componente estrutural da parede celular (pectato de cálcio) e mensageiro secundário.</li>
+                    <li><strong>Mg:</strong> Átomo central da molécula de clorofila e ativador enzimático na fosforilação.</li>
+                    <li><strong>S:</strong> Constituinte de aminoácidos essenciais (metionina e cisteína) e coenzimas.</li>
+                    <li><strong>Micronutrientes (B, Zn, Mn, Fe, Cu, Mo):</strong> Atuam como cofatores enzimáticos essenciais em vias metabólicas e redox específicas.</li>
+                </ul>
+                <p><strong>Calagem e Gessagem:</strong> A calagem eleva o pH, neutraliza o \(Al^{3+}\) tóxico e fornece Ca e Mg através da reação básica do carbonato. A gessagem (\(CaSO_4 \cdot 2H_2O\)) não altera o pH da camada superficial, mas atua em subsuperfície, fornecendo Ca e reduzindo a atividade do alumínio por pareamento iônico (\(AlSO_4^+\)), promovendo o aprofundamento radicular.</p>
+
+                <h3>Biologia do Solo</h3>
+                <p><strong>Microbioma e FBN:</strong> A Fixação Biológica de Nitrogênio ocorre por simbiose entre leguminosas e bactérias dos gêneros <em>Rhizobium</em> e <em>Bradyrhizobium</em>. A enzima clivadora é o complexo nitrogenase, altamente sensível ao oxigênio livre, o qual é controlado pela leg-hemoglobina no interior dos nódulos radiculares.</p>
+                <p><strong>Micorrizas:</strong> Associações simbióticas mutualísticas entre fungos e raízes. Expandem a área de absorção radicular através de redes de hifas extracelulares, otimizando de forma robusta a captação de elementos de baixa mobilidade, especialmente o Fósforo (P).</p>
+            </section>
+
+            <section id="modulo2" class="content-section">
+                <h2>2. Fitotecnia e Manejo Cultural</h2>
+                <h3>Sistemas de Cultivo</h3>
+                <p><strong>Sistema de Plantio Direto (SPD):</strong> Baseia-se em três pilares integrados: não revolvimento do solo, rotação de culturas e manutenção permanente da palhada (cobertura morta). A palhada reduz a amplitude térmica do solo, mitiga o impacto cinético das gotas de chuva (prevenindo erosão salpicada) e recicla nutrientes de camadas profundas.</p>
+                <p><strong>Integração Lavoura-Pecuária-Floresta (ILPF):</strong> Consiste na consorciação sinérgica de componentes agrícolas, pecuários e florestais na mesma área. Maximiza a ciclagem de nutrientes, otimiza o uso da terra, quebra ciclos de pragas/doenças e melhora o conforto térmico animal pela arborização mitigadora.</p>
+
+                <h3>Fenologia e Fisiologia</h3>
+                <p><strong>Estádios Fenológicos:</strong> Divididos nas escalas vegetativa (emergência, emissão de folhas e nós) e reprodutiva (florescimento, polinização, formação e maturação de grãos/frutos). O monitoramento preciso baliza o momento exato de tratos fitossanitários e nutricionais de alta exigência.</p>
+                <p><strong>Mecanismos Fotossintéticos:</strong></p>
+                <ul>
+                    <li><strong>C3 (ex: soja, trigo):</strong> Primeiro composto estável tem 3 carbonos (3-PGA). Apresenta alta taxa de fotorrespiração sob estresse térmico/hídrico devido à afinidade oxigenásica da enzima RuBisCO.</li>
+                    <li><strong>C4 (ex: milho, cana-de-açúcar):</strong> Separação espacial da fixação inicial (via PEP-carboxilase nas células do mesofilo) e o ciclo de Calvin (nas células da bainha do feixe). Minimização extrema da fotorrespiração, garantindo alta eficiência no uso da água e radiação.</li>
+                    <li><strong>CAM (ex: abacaxi, cactáceas):</strong> Separação temporal. Abertura estomática noturna para captação e armazenamento de CO₂ na forma de malato em vacúolos, minimizando drasticamente a perda de água em ambientes semiáridos.</li>
+                </ul>
+                <p><strong>Relação Fonte-Dreno:</strong> Dinâmica de translocação de fotoassimilados. As fontes (folhas maduras fotossinteticamente ativas) direcionam o fluxo de sacarose via floema para os drenos metabólicos preferenciais (grãos e frutos em enchimento), processo regulado por gradientes de pressão osmótica e fitormônios.</p>
+
+                <h3>Tratos Culturais de Alta Performance</h3>
+                <p>O cálculo exato do estande e densidade de semeadura determina a eficiência de interceptação da Radiação Fotossinteticamente Ativa (RFA). Ajustes na arquitetura geométrica espacial das plantas e podas estratégicas evitam o autossombreamento, potencializando o Índice de Área Foliar (IAF) crítico e o rendimento líquido.</p>
+            </section>
+
+            <section id="modulo3" class="content-section">
+                <h2>3. Fitossanidade e Manejo Integrado (MIP)</h2>
+                <h3>Entomologia Agrícola</h3>
+                <p><strong>Dinâmica Populacional e Tomada de Decisão:</strong> Baseia-se no monitoramento contínuo das populações de insetos praga (sugadores como percevejos/cigarrinhas vs. mastigadores como lagartas/besouros). A intervenção é disparada pela relação entre os índices populacionais:</p>
+                <div class="equation">\text{NA (Nível de Ação)} \le \text{NDE (Nível de Dano Econômico)}</div>
+                <p>O NDE é o ponto em que o custo do controle se iguala ao valor monetário do dano que seria causado pela praga. O MIP prioriza o <strong>controle biológico</strong> utilizando parasitoides (ex: <em>Trichogramma spp.</em>) e predadores naturais para manter a praga abaixo do NA.</p>
+
+                <h3>Fitopatologia</h3>
+                <p><strong>O Triângulo da Doença:</strong> Postula que a enfermidade vegetal só ocorre com a intersecção simultânea de três fatores: um Hospedeiro Suscetível, um Patógeno Virulento e um Ambiente Favorável.</p>
+                <p><strong>Manejo de Resistência:</strong> Para deter epidemias de fungos, bactérias, vírus e nematoides, implementa-se o vazio sanitário (ausência temporária do hospedeiro no campo para quebrar o ciclo biológico do patógeno) e a rotação rigorosa de princípios ativos fungicidas/bactericidas com diferentes mecanismos de ação (FRAC), mitigando a seleção de cepas mutantes resistentes.</p>
+
+                <h3>Matologia (Plantas Daninhas)</h3>
+                <p>A matocompetição interfere diretamente pelos recursos limitantes do meio (água, luz, nutrientes). O manejo químico avançado exige a rotação de Mecanismos de Ação de herbicidas:</p>
+                <ul>
+                    <li>Inibidores da ALS (interrompem síntese de aminoácidos ramificados).</li>
+                    <li>Inibidores da EPSPs (ex: glifosato, bloqueia via do xiquimato).</li>
+                    <li>Inibidores da ACCase (interrompem a síntese de lipídios em gramíneas).</li>
+                </ul>
+                <p>A negligência nessa rotação resulta na seleção de biótipos altamente resistentes (ex: buva, capim-amargoso), exigindo estratégias de manejo integrado de plantas daninhas (MIPD).</p>
+            </section>
+
+            <section id="modulo4" class="content-section">
+                <h2>4. Engenharia de Biossistemas e Agricultura de Precisão</h2>
+                <h3>Mecanização Avançada</h3>
+                <p><strong>Dinâmica de Tração e Patinagem:</strong> Otimização da eficiência tratora por meio do correto lastreamento (líquido e sólido), controlando o índice de patinagem ideal (entre 8% e 15% em solos firmes) para mitigar o consumo específico de combustível e o cisalhamento estrutural do solo.</p>
+                <p><strong>Calibração Milimétrica:</strong> Nas semeadoras, calibra-se o sistema de distribuição de sementes para evitar falhas e duplas (elevando o índice de singulação por discos alveolados a vácuo ou pressão pneumática) e ajusta-se a pressão das molas das linhas para uniformidade de profundidade. Nas colhedoras, regula-se milimetricamente a velocidade do molinete, abertura do côncavo e rotação do rotor de trilha para reduzir perdas na plataforma e danos mecânicos latentes aos grãos.</p>
+
+                <h3>Agricultura de Precisão (AP)</h3>
+                <p><strong>Aplicação em Taxa Variável (VRA):</strong> Prescrição automatizada de insumos (fertilizantes e corretivos) baseada em mapas de fertilidade gerados por grades georreferenciadas de amostragem de solo. Rompe o paradigma da adubação por média, tratando a variabilidade espacial intratalhão.</p>
+                <p><strong>Automação e GNSS:</strong> Utilização de redes de posicionamento global com correção cinemática em tempo real (RTK), garantindo precisão submétrica (erro inferior a 2,5 cm). Reduz o esmagamento de culturas, otimiza o paralelismo de passadas e permite o tráfego controlado de frotas combinadas via telemetria integrada.</p>
+
+                <h3>Sensoriamento Remoto e IA</h3>
+                <p>Baseia-se nas curvas de assinatura espectral da vegetação. As plantas sadias absorvem fortemente a radiação na banda do Vermelho (clorofila) e refletem intensamente no Infravermelho Próximo (estrutura celular do mesofilo foliar). A partir disso, processam-se índices matemáticos:</p>
+                <div class="equation">NDVI = \frac{\text{IVP} - \text{Vermelho}}{\text{IVP} + \text{Vermelho}}</div>
+                <p>O índice <strong>NDRE</strong> substitui o Vermelho pelo <em>RedEdge</em> (borda do vermelho), sendo mais sensível para culturas em estágios avançados com alto fechamento de dossel. Algoritmos de Visão Computacional embarcados em drones e satélites processam essas imagens raster, detectando precocemente anomalias nutricionais, estresse hídrico e reboleiras de pragas ou plantas daninhas.</p>
+            </section>
+
+            <section id="modulo5" class="content-section">
+                <h2>5. Zootecnia e Produção Animal Avançada</h2>
+                <h3>Melhoramento Genético e Genômica</h3>
+                <p>Uso de Diferenças Esperadas na Prole (DEPs) para estimar o valor genético de um indivíduo como progenitor, ponderando características de relevância econômica (ganho de peso, eficiência alimentar, rendimento de carcaça, produção leiteira). A herdabilidade (\(h^2\)) orienta o progresso genético por geração. A seleção assistida por marcadores moleculares (painéis de SNPs de alta densidade) antecipa a predição genômica em animais jovens, reduzindo drasticamente o intervalo de gerações.</p>
+
+                <h3>Nutrição e Fisiologia Digestiva</h3>
+                <p><strong>Ruminantes (Foco Rumenal):</strong> A formulação visa alimentar prioritariamente o microbioma ruminal (bactérias celulolíticas e amilolíticas). Equilibra-se a Fibra em Detergente Neutro (FDN, ligada ao consumo e motilidade) e a Fibra em Detergente Ácido (FDA, ligada à digestibilidade), associando Nitrogênio Não Proteico (NNP) e Carboidratos Não Fibrosos (CNF) para maximizar a síntese de proteína microbiana e a produção de Ácidos Graxos Voláteis (acetato, propionato, butirato).</p>
+                <p><strong>Monogástricos:</strong> Formulação estrita baseada no conceito de proteína ideal (perfil exato de aminoácidos digestíveis sem excessos), maximizando a retenção de nitrogênio e minimizando a excreção poluente ambiental.</p>
+                <p><strong>Manejo de Pastagens:</strong> Baseado no conceito de ecofisiologia do pastejo. A entrada dos animais no piquete ocorre quando o dossel atinge 95% de interceptação luminosa (evitando senescência foliar basal), e a saída ocorre respeitando a altura de resíduo crítico para garantir o vigor de rebrote e a manutenção das reservas orgânicas radiculares.</p>
+
+                <h3>Ambiência e Bem-Estar Animal</h3>
+                <p>Instalações tecnológicas como <em>Compost Barns</em> (camas aeradas de serragem ou maravalha) e <em>Freestalls</em> utilizam sistemas automatizados de ventilação forçada e aspersão inteligente controlados por sensores térmicos ambientais. O monitoramento contínuo calcula o Índice de Temperatura e Umidade (ITU): valores elevados disparam estresse térmico, reduzindo a ingestão de matéria seca e desencadeando acidose metabólica. Sistemas de ordenha robotizada (AMS) e trato automatizado melhoram o bem-estar e a consistência produtiva.</p>
+            </section>
+
+            <section id="modulo6" class="content-section">
+                <h2>6. Gestão, Economia e Mercado de Commodities (Agribusiness)</h2>
+                <h3>Mercado Futuro e Hedge</h3>
+                <p>Mecanismos de mitigação de risco de volatilidade de preços em bolsas internacionais (CBOT) e nacionais (B3). O produtor realiza o <strong>Hedge de Venda</strong> no mercado futuro vendendo contratos correspondentes à sua estimativa de produção física, travando uma margem de lucro operacional. As operações estruturadas de <em>Barter</em> representam o financiamento da safra onde o pagamento dos insumos é feito diretamente com a entrega física da commodity na pós-colheita.</p>
+
+                <h3>Gestão de Custos (Matriz COE/COT)</h3>
+                <p>A análise financeira do agronegócio segmenta-se na metodologia do custo operacional:</p>
+                <ul>
+                    <li><strong>Custo Operacional Efetivo (COE):</strong> Desembolsos financeiros diretos de curto prazo (sementes, fertilizantes, defensivos, combustível, mão de obra horista).</li>
+                    <li><strong>Custo Operacional Total (COT):</strong> COE somado à depreciação linear de todos os ativos fixos (maquinários, benfeitorias) e o custo de oportunidade da mão de obra familiar.</li>
+                    <li><strong>Custo Econômico:</strong> COT somado ao custo de oportunidade total do capital empatado e da terra (remuneração alternativa de arrendamento).</li>
+                </ul>
+                <p>A Margem de Contribuição (\(\text{Receita Bruta} - \text{COE}\)) determina a sustentabilidade financeira e o ponto de equilíbrio da empresa agrícola a curto e médio prazo.</p>
+            </section>
+        </main>
+    </div>
+
+    <div id="animation-container">
+        <div class="canvas-header">
+            <h3>Visualizador Interativo de Fluxo de Insumos & Biossistemas (p5.js)</h3>
+            <p>Mova o mouse sobre a tela para guiar a dispersão simulada de macro/micronutrientes e calibrar o sensor de taxa variável.</p>
+        </div>
+        <div id="canvas-holder"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgroForte Avançado. Desenvolvimento Front-End e Engenharia de Biossistemas de Alta Performance.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="sketch.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('.content-section');
+
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove as classes ativas de todas as abas e seções
+                links.forEach(l => l.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+                
+                // Adiciona classe ativa para a aba clicada
+                this.classList.add('active');
+                
+                // Exibe a seção correspondente com animação nativa CSS
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+                
+                // Comportamento responsivo: joga o foco na seção se for mobile
+                if(window.innerWidth <= 992) {
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>

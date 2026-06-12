@@ -1,0 +1,233 @@
+/* Paleta de Cores AgroForte Avançado:
+   - Verde Folha/Sustentabilidade: #2e7559 (Primária)
+   - Amarelo Ouro/Agrinho/Energia: #bf9000 (Acentuação/Destaque)
+   - Marrom Terra/Pecuária: #70482c (Secundária)
+   - Fundo Neutro Claro: #f5f7f8
+   - Texto Principal: #2a2d2e
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7f8;
+    color: #2a2d2e;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7559;
+    color: #ffffff;
+    padding: 2rem 0;
+    border-bottom: 4px solid #bf9000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #d1e7dd;
+    margin-top: 0.25rem;
+}
+
+/* Estrutura Dashboard em Abas Laterais (UX Avançada) */
+.dashboard {
+    display: flex;
+    margin: 2.5rem auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #2e7559;
+    border-right: 1px solid rgba(0,0,0,0.05);
+    padding: 1.5rem 0;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar .nav-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #e2f0ea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    border-left: 4px solid transparent;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #245d46;
+    color: #ffffff;
+}
+
+.sidebar .nav-link.active {
+    background-color: #f5f7f8;
+    color: #2e7559;
+    border-left: 4px solid #bf9000;
+}
+
+/* Área de Conteúdo */
+.content-area {
+    width: 75%;
+    padding: 2.5rem 3rem;
+    background-color: #ffffff;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.content-area h2 {
+    color: #2e7559;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 0.5rem;
+}
+
+.content-area h3 {
+    color: #70482c;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.75rem 0;
+}
+
+.content-area p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 1rem;
+    color: #444a4c;
+}
+
+.content-area ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-area li {
+    margin-bottom: 0.5rem;
+    color: #444a4c;
+}
+
+/* Estilização Avançada das Equações Técnicas */
+.equation {
+    background-color: #f8f9fa;
+    border-left: 4px solid #70482c;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1a1a1a;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+}
+
+/* Container de Animação Interativa (p5.js) */
+#animation-container {
+    max-width: 1200px;
+    margin: 2rem auto 4rem auto;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    overflow: hidden;
+    border-top: 4px solid #bf9000;
+}
+
+.canvas-header {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.canvas-header h3 {
+    color: #2e7559;
+    font-size: 1.25rem;
+}
+
+.canvas-header p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+#canvas-holder {
+    width: 100%;
+    background-color: #f5f7f8;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2a2d2e;
+    color: #adb5bd;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 3px solid #70482c;
+}
+
+/* Animação de Entrada de Conteúdo */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Media Queries para Responsividade Fluida (Telas Menores / Mobile) */
+@media (max-width: 992px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        padding: 0;
+        border-right: none;
+        border-bottom: 2px solid #bf9000;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar .nav-link {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+    .sidebar .nav-link.active {
+        border-left: none;
+        border-bottom: 3px solid #bf9000;
+    }
+    .content-area {
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
